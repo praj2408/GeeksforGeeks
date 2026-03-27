@@ -1,1 +1,1 @@
-# GeeksForGeeks Solutions
+# GeeksForGeeks
