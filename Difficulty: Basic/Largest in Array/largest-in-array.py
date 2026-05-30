@@ -2,9 +2,10 @@ class Solution:
     def largest(self, arr):
         # code here
         
-        maxi = 0
+        maxi = float('-inf')
+        
         for num in arr:
             if num > maxi:
                 maxi = num
+                
         return maxi
-        
