@@ -5,12 +5,12 @@ class Solution:
         freq = {}
         
         for num in arr:
-            freq[num] = freq.get(num, 0) + 1
+            freq[num] = freq.get(num, 0) +1
             
-        
         result = []
         
-        for key in freq:
-            result.append([key, freq[key]])
+        for key, value in freq.items():
+            
+            result.append([key, value])
             
         return result
