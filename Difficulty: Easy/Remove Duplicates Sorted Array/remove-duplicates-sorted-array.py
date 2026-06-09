@@ -3,13 +3,12 @@ class Solution:
         # code here 
         
         
-        if not arr:
-            return []
-
-        res = [arr[0]]
-
+        j = 0
+        
         for i in range(1, len(arr)):
-            if arr[i] != arr[i - 1]:
-                res.append(arr[i])
-
-        return res
+            if arr[i] != arr[j]:
+                j += 1
+                arr[j] = arr[i]
+                
+        return arr[:j+1]
+            
