@@ -1,16 +1,14 @@
+from collections import Counter
+
 class Solution:
     def countFreq(self, arr):
         #code here
         
-        freq = {}
         
-        for num in arr:
-            freq[num] = freq.get(num, 0) +1
-            
+        freq = Counter(arr)
+        
         result = []
-        
-        for key, value in freq.items():
-            
-            result.append([key, value])
+        for num, count in freq.items():
+            result.append([num, count])
             
         return result
