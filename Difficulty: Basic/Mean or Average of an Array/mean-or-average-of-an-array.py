@@ -2,11 +2,6 @@ class Solution:
     def findMean(self, arr):
         # code here 
         
+        return int(sum(arr) / len(arr))
         
         
-        summation = sum(arr)
-        n = len(arr)
-        
-        average = int(summation / n)
-        
-        return average
